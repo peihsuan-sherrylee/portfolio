@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sherry Lee | Digital Strategy, AI Adoption, Project Management</title>
+<meta name="description" content="Sherry Lee, Senior Account Manager & Digital Consultant at Golin Taipei. 7+ years of digital, social and AI-powered programs for tech and consumer brands.">
+<meta property="og:title" content="Sherry Lee | Digital Strategy, AI Adoption, Project Management">
+<meta property="og:description" content="7+ years turning complex tech, social data and AI tools into stories, strategy and better workflows.">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=Noto+Sans+TC:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F4F6F8;
+    --surface: #FFFFFF;
+    --text: #2F3A4A;
+    --muted: #697384;
+    --line: #DDE2E9;
+    --slate: #4E6079;
+    --mist: #CAD8E6;
+    --sage: #D2E0D3;
+    --lilac: #DDD6E8;
+    --rose: #EBD7DA;
+    --sea: #CFE4E1;
+    --radius-lg: 26px;
+    --radius-sm: 14px;
+    color-scheme: light;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  html { scroll-padding-top: env(safe-area-inset-top, 0px); scroll-behavior: smooth; background: var(--bg); }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg); color: var(--text);
+    font-family: "Bricolage Grotesque", "Noto Sans TC", "Segoe UI", "PingFang TC", "Microsoft JhengHei", sans-serif;
+    font-size: 17px; line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  html[data-lang="zh"] body { font-family: "Noto Sans TC", "Bricolage Grotesque", "PingFang TC", "Microsoft JhengHei", sans-serif; line-height: 1.75; }
+  html[data-lang="en"] .zh, html[data-lang="zh"] .en { display: none !important; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--slate); outline-offset: 3px; border-radius: 6px; }
+  .wrap { width: min(1120px, 100% - 40px); margin-inline: auto; }
+
+  /* Nav */
+  nav { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(10px); }
+  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 21; background: var(--bg); }
+  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  .mark { font-weight: 700; font-size: 20px; text-decoration: none; letter-spacing: -0.3px; display: inline-flex; align-items: center; gap: 8px; }
+  .mark i { display: inline-block; width: 22px; height: 22px; border-radius: 7px; background: linear-gradient(135deg, var(--sage) 50%, var(--mist) 50%); }
+  .nav-actions { display: flex; gap: 10px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 8px; font: inherit; font-weight: 600; font-size: 15px;
+    padding: 10px 18px; border-radius: 999px; border: 1.5px solid var(--slate); background: transparent; color: var(--slate);
+    cursor: pointer; text-decoration: none; transition: background .2s ease, color .2s ease;
+  }
+  .btn:hover { background: var(--mist); }
+  .btn.solid { background: var(--slate); color: #FFFFFF; }
+  .btn.solid:hover { background: #3F4F66; }
+  .btn.lang { min-width: 64px; justify-content: center; }
+
+  /* Hero */
+  .hero { padding: 56px 0 72px; }
+  .hero-grid { display: grid; grid-template-columns: 1.55fr 1fr; gap: 48px; align-items: center; }
+  .hero h1 { font-size: clamp(40px, 5.4vw, 64px); line-height: 1.1; font-weight: 700; letter-spacing: -1.5px; }
+  html[data-lang="zh"] .hero h1 { letter-spacing: 0; line-height: 1.3; font-weight: 700; font-size: clamp(34px, 4.6vw, 54px); }
+  .rot { display: inline-block; padding: 0 .24em; border-radius: .26em; margin: .06em 0; overflow: hidden; vertical-align: bottom; }
+  .rot > span { display: inline-block; }
+  .rot.a { background: var(--mist); }
+  .rot.b { background: var(--rose); }
+  .rot.swap > span { animation: swap .6s cubic-bezier(.2,.8,.2,1); }
+  @keyframes swap { from { transform: translateY(100%); opacity: 0; } to { transform: none; opacity: 1; } }
+  .hero p.lede { margin-top: 26px; font-size: 18px; color: var(--muted); max-width: 54ch; }
+  .hero p.lede strong { color: var(--text); font-weight: 600; }
+  .cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+  .cta .btn { padding: 12px 22px; font-size: 16px; }
+
+  .stack { position: relative; min-height: 440px; }
+  .chip {
+    position: absolute; width: 74%; padding: 26px 26px 24px; border-radius: var(--radius-lg);
+    font-weight: 700; font-size: 24px; line-height: 1.2; box-shadow: 0 16px 36px -22px rgba(47,58,74,.35);
+    animation: drop .9s cubic-bezier(.2,.9,.25,1.1) both;
+  }
+  .chip small { display: block; font-weight: 400; font-size: 15px; line-height: 1.5; margin-top: 10px; color: #4A5566; }
+  .chip:nth-child(1) { top: 0; left: 0; background: var(--rose); transform: rotate(-3deg); animation-delay: .15s; }
+  .chip:nth-child(2) { top: 140px; right: 0; background: var(--sage); transform: rotate(2.5deg); animation-delay: .3s; }
+  .chip:nth-child(3) { top: 300px; left: 6%; background: var(--mist); transform: rotate(-1.5deg); animation-delay: .45s; }
+  @keyframes drop { from { opacity: 0; translate: 0 -30px; } to { opacity: 1; translate: 0 0; } }
+
+  /* Sections */
+  section { padding: 64px 0; }
+  h2 { font-size: clamp(30px, 4vw, 46px); line-height: 1.1; font-weight: 700; letter-spacing: -0.8px; }
+  html[data-lang="zh"] h2 { letter-spacing: 0.5px; }
+  .intro { color: var(--muted); margin-top: 10px; font-size: 17px; }
+
+  /* Proof tiles */
+  .tiles { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 32px; }
+  .tile { position: relative; min-height: 210px; border: 0; border-radius: var(--radius-lg); cursor: pointer; font: inherit; text-align: left; perspective: 1000px; background: transparent; color: var(--text); }
+  .tile.wide { grid-column: span 2; }
+  .tile .inner { position: absolute; inset: 0; transition: transform .6s cubic-bezier(.3,.8,.3,1); transform-style: preserve-3d; }
+  .tile.on .inner { transform: rotateY(180deg); }
+  .face { position: absolute; inset: 0; border-radius: var(--radius-lg); padding: 22px; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; justify-content: space-between; }
+  .face.back { transform: rotateY(180deg); justify-content: center; font-size: 15px; line-height: 1.55; }
+  .num { font-size: clamp(42px, 4.8vw, 60px); font-weight: 700; line-height: 1; letter-spacing: -1.5px; font-family: "Bricolage Grotesque", sans-serif; }
+  .lbl { font-size: 15.5px; font-weight: 600; max-width: 30ch; line-height: 1.45; }
+  .c-mist { background: var(--mist); }
+  .c-sage { background: var(--sage); }
+  .c-lilac { background: var(--lilac); }
+  .c-rose { background: var(--rose); }
+  .c-sea { background: var(--sea); }
+  .c-slate { background: var(--slate); color: #FFFFFF; }
+
+  /* Marquee */
+  .marquee-label { margin-top: 48px; font-weight: 600; color: var(--muted); }
+  .marquee { overflow: hidden; border-block: 1.5px solid var(--line); margin-top: 12px; }
+  .track { display: flex; width: max-content; animation: slide 42s linear infinite; }
+  .track span { font-weight: 600; font-size: 24px; padding: 16px 26px; white-space: nowrap; color: var(--slate); }
+  .track span::after { content: ""; display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-left: 52px; background: var(--sage); vertical-align: middle; }
+  .track span:nth-child(3n+2)::after { background: var(--rose); }
+  .track span:nth-child(3n)::after { background: var(--mist); }
+  .marquee:hover .track { animation-play-state: paused; }
+  @keyframes slide { to { transform: translateX(-50%); } }
+
+  /* AI list */
+  .ai-list { margin-top: 30px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 36px; }
+  .ai-item { padding: 20px 0; border-top: 1.5px solid var(--line); }
+  .ai-item h3 { font-size: 19px; font-weight: 700; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; }
+  .ai-item h3::before { content: ""; width: 14px; height: 14px; border-radius: 4px; background: var(--mist); flex: none; }
+  .ai-item:nth-child(4n+2) h3::before { background: var(--rose); }
+  .ai-item:nth-child(4n+3) h3::before { background: var(--sage); }
+  .ai-item:nth-child(4n+4) h3::before { background: var(--lilac); }
+  .ai-item p { color: var(--muted); font-size: 16px; max-width: 60ch; }
+
+  /* Timeline */
+  .timeline { margin-top: 30px; position: relative; padding-left: 30px; }
+  .timeline::before { content: ""; position: absolute; left: 8px; top: 8px; bottom: 8px; width: 2px; background: var(--line); border-radius: 2px; }
+  details { position: relative; padding: 4px 0 18px; }
+  details::before { content: ""; position: absolute; left: -29px; top: 13px; width: 17px; height: 17px; border-radius: 50%; background: var(--bg); border: 2.5px solid var(--slate); }
+  details[open]::before { background: var(--mist); }
+  summary { list-style: none; cursor: pointer; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 18px; padding: 6px 0; }
+  summary::-webkit-details-marker { display: none; }
+  summary .role { font-weight: 700; font-size: 18px; }
+  summary .role::after { content: "+"; display: inline-block; margin-left: 10px; color: var(--slate); font-weight: 700; transition: transform .2s ease; }
+  details[open] summary .role::after { transform: rotate(45deg); }
+  summary .when { color: var(--muted); font-size: 15px; }
+  .clients { color: var(--muted); font-size: 14.5px; margin-top: 2px; }
+  details ul { margin: 10px 0 0 18px; }
+  details li { margin-bottom: 6px; font-size: 16px; }
+  .org { font-weight: 700; font-size: 15px; color: var(--muted); margin: 18px 0 6px -30px; padding-left: 30px; }
+
+  /* Small facts */
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .fact { background: var(--surface); border: 1.5px solid var(--line); border-radius: var(--radius-sm); padding: 20px; }
+  .fact h3 { font-size: 15px; color: var(--muted); font-weight: 600; margin-bottom: 8px; }
+  .fact p { font-size: 15.5px; margin-bottom: 6px; }
+
+  #more { padding-top: 8px; }
+  footer { border-top: 1.5px solid var(--line); margin-top: 24px; padding: 26px 0 34px; color: var(--muted); font-size: 14px; }
+  footer .wrap { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+
+  @media (max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+    .stack { min-height: 0; display: grid; gap: 14px; }
+    .chip { position: relative; width: 100%; font-size: 21px; }
+    .chip:nth-child(1), .chip:nth-child(2), .chip:nth-child(3) { top: auto; left: auto; right: auto; }
+    .tiles { grid-template-columns: repeat(2, 1fr); }
+    .ai-list { grid-template-columns: 1fr; }
+    .facts { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    .tiles { grid-template-columns: 1fr; }
+    .tile.wide { grid-column: auto; }
+    .tile { min-height: 160px; }
+    .nav-actions .btn.pdf-nav { display: none; }
+    .hero h1 { font-size: 36px; }
+    html[data-lang="zh"] .hero h1 { font-size: 30px; }
+    .rot { white-space: nowrap; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    html { scroll-behavior: auto; }
+    .track { flex-wrap: wrap; width: auto; }
+    .track [aria-hidden="true"] { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav aria-label="Main">
+  <div class="wrap">
+    <a class="mark" href="#top"><i aria-hidden="true"></i>Sherry Lee</a>
+    <div class="nav-actions">
+      <a class="btn pdf-nav" href="Sherry_Lee_Resume_2026.pdf" download><span class="en">Résumé PDF</span><span class="zh">履歷 PDF</span></a>
+      <button class="btn solid lang" id="langBtn" type="button" aria-label="Switch language">中文</button>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+  <header class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>
+          <span class="en">I turn</span><span class="zh">將</span>
+          <span class="rot a" id="rotA"><span>complex technology</span></span>
+          <span class="en">into</span><span class="zh" style="white-space:nowrap">轉化為</span>
+          <span class="rot b" id="rotB"><span>shareable stories</span></span>
+        </h1>
+        <p class="lede">
+          <span class="en">I&rsquo;m <strong>Pei-Hsuan (Sherry) Lee</strong>, a Senior Account Manager &amp; Digital Consultant at Golin Taipei with 7+ years of experience building digital, social and AI-powered programs for tech and consumer brands.</span>
+          <span class="zh"><strong>Sherry Lee</strong>，現任高誠公關（Golin）台北 Senior Account Manager &amp; Digital Consultant，擁有逾 7 年數位公關經驗，專注為科技與消費品牌規劃數位、社群及 AI 應用專案。</span>
+        </p>
+        <div class="cta">
+          <a class="btn solid" href="Sherry_Lee_Resume_2026.pdf" download><span class="en">Download résumé</span><span class="zh">下載履歷</span></a>
+          <a class="btn" href="https://www.linkedin.com/in/sherrylee-89935baa" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn" href="mailto:sherrii1030@gmail.com"><span class="en">Email me</span><span class="zh">Email 聯繫</span></a>
+        </div>
+      </div>
+      <div class="stack" aria-label="Focus areas">
+        <div class="chip">
+          <span class="en">Digital strategy</span><span class="zh">數位策略</span>
+          <small><span class="en">Social media, B2B tech storytelling, influencer and paid media</span><span class="zh">社群經營、B2B 科技內容、KOL 合作、數位廣告</span></small>
+        </div>
+        <div class="chip">
+          <span class="en">AI adoption &amp; training</span><span class="zh">AI 導入與培訓</span>
+          <small><span class="en">In-house AI tools, AI search visibility, GenAI workshops</span><span class="zh">內部工具導入、AI 搜尋能見度、生成式 AI 培訓</span></small>
+        </div>
+        <div class="chip">
+          <span class="en">Project management</span><span class="zh">專案管理</span>
+          <small><span class="en">Scoping, budgeting, cross-functional delivery</span><span class="zh">專案規劃、預算控管、跨部門執行</span></small>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="results">
+    <div class="wrap">
+      <h2><span class="en">Results at a glance</span><span class="zh">重點成果</span></h2>
+      <p class="intro"><span class="en">Tap any card to see the strategy behind it.</span><span class="zh">點選卡片即可查看執行策略。</span></p>
+
+      <div class="tiles">
+        <button class="tile" type="button" aria-pressed="false">
+          <span class="inner">
+            <span class="face front c-sage">
+              <span class="num" data-count="1" data-suffix="M+">1M+</span>
+              <span class="lbl"><span class="en">Total reach for a semiconductor tech storytelling series</span><span class="zh">半導體科技議題系列內容總觸及</span></span>
+            </span>
+            <span class="face back c-sage">
+              <span class="en">Explained chip technology through a six-post series of everyday analogies, optimized with A/B-tested CTAs and retargeting. Delivered 11K+ clicks and a 57% lift in social buzz around the brand and AI.</span>
+              <span class="zh">以生活化比喻詮釋晶片技術，規劃 6 篇系列貼文，並透過 A/B 測試與再行銷優化成效；累積逾 1.1 萬次點擊，「品牌 x AI」社群聲量成長 57%。</span>
+            </span>
+          </span>
+        </button>
+        <button class="tile" type="button" aria-pressed="false">
+          <span class="inner">
+            <span class="face front c-lilac">
+              <span class="num" data-count="40" data-prefix="+" data-suffix="%">+40%</span>
+              <span class="lbl"><span class="en">Facebook follower growth in 14 months for a B2B semiconductor brand</span><span class="zh">B2B 半導體品牌粉絲專頁 14 個月粉絲成長</span></span>
+            </span>
+            <span class="face back c-lilac">
+              <span class="en">Repositioned the page around an engineer persona and four content pillars, with engagement consistently ranking in the top two among peers.</span>
+              <span class="zh">以「工程師」人設與四大內容主軸重新定位粉絲專頁，互動表現穩居競品前兩名。</span>
+            </span>
+          </span>
+        </button>
+        <button class="tile" type="button" aria-pressed="false">
+          <span class="inner">
+            <span class="face front c-sea">
+              <span class="num" data-count="660" data-suffix="K+">660K+</span>
+              <span class="lbl"><span class="en">Website clicks for a national healthcare campaign, 3x the target</span><span class="zh">全國性健康議題活動網站點擊，達成目標 3 倍</span></span>
+            </span>
+            <span class="face back c-sea">
+              <span class="en">Built a full-funnel media strategy that also generated 10M+ video views.</span>
+              <span class="zh">規劃全漏斗媒體策略，影片觀看數同步突破 1,000 萬次。</span>
+            </span>
+          </span>
+        </button>
+        <button class="tile" type="button" aria-pressed="false">
+          <span class="inner">
+            <span class="face front c-slate">
+              <span class="num" data-count="100" data-suffix="%">100%</span>
+              <span class="lbl"><span class="en">of a QSR brand&rsquo;s full-time hiring goal achieved through an employer branding campaign</span><span class="zh">速食品牌雇主品牌活動，助客戶 100% 達成全職招募目標</span></span>
+            </span>
+            <span class="face back c-slate">
+              <span class="en">Built on a reverse-recruitment idea: millennials encouraging their retired parents to return to work. Generated 1.13M KOL impressions, and the brand was recognized by the government as an elderly-friendly workplace.</span>
+              <span class="zh">以「反向招募」為創意核心，號召千禧世代鼓勵退休父母重返職場；KOL 內容曝光達 113 萬次，品牌並獲政府肯定為高齡友善職場。</span>
+            </span>
+          </span>
+        </button>
+        <button class="tile" type="button" aria-pressed="false">
+          <span class="inner">
+            <span class="face front c-rose">
+              <span class="num" data-count="14.05" data-decimals="2" data-suffix="%">14.05%</span>
+              <span class="lbl"><span class="en">Average Instagram engagement rate for a QSR brand&rsquo;s creator program</span><span class="zh">速食品牌創作者計畫 Instagram 平均互動率</span></span>
+            </span>
+            <span class="face back c-rose">
+              <span class="en">An innovative partnership model built on long-term, low-key collaboration with creators, sustaining strong engagement across annual campaigns.</span>
+              <span class="zh">以長期且低調自然的創新合作模式經營創作者關係，於年度活動中創造亮眼互動表現。</span>
+            </span>
+          </span>
+        </button>
+        <button class="tile" type="button" aria-pressed="false">
+          <span class="inner">
+            <span class="face front c-mist">
+              <span class="num" data-count="100" data-suffix="+">100+</span>
+              <span class="lbl"><span class="en">Media placements across APAC from regional briefings</span><span class="zh">亞太區域媒體簡報促成之報導則數</span></span>
+            </span>
+            <span class="face back c-mist">
+              <span class="en">Coordinated regional media briefings as the APAC hub lead.</span>
+              <span class="zh">擔任亞太區 Hub Lead，統籌區域媒體簡報。</span>
+            </span>
+          </span>
+        </button>
+        <button class="tile wide" type="button" aria-pressed="false">
+          <span class="inner">
+            <span class="face front c-sage">
+              <span class="num" data-count="3" data-suffix="x">3x</span>
+              <span class="lbl"><span class="en">Digital team revenue growth, 2024 to 2025</span><span class="zh">數位團隊營收成長（2024 至 2025）</span></span>
+            </span>
+            <span class="face back c-sage">
+              <span class="en">Driven by winning new clients and deepening partnerships with existing ones.</span>
+              <span class="zh">在拓展新客戶的同時，深化與既有客戶的合作。</span>
+            </span>
+          </span>
+        </button>
+        <button class="tile" type="button" aria-pressed="false">
+          <span class="inner">
+            <span class="face front c-lilac">
+              <span class="num" data-count="2" data-suffix="x">2x</span>
+              <span class="lbl"><span class="en">SABRE Awards APAC for Employer Branding</span><span class="zh">兩度榮獲 SABRE Award APAC Employer Branding 獎項</span></span>
+            </span>
+            <span class="face back c-lilac">
+              <span class="en">Won back to back in 2021 and 2022.</span>
+              <span class="zh">2021、2022 年連續獲獎。</span>
+            </span>
+          </span>
+        </button>
+      </div>
+
+      <p class="marquee-label"><span class="en">Brands I've worked with</span><span class="zh">服務品牌</span></p>
+      <div class="marquee">
+        <div class="track">
+          <span>McDonald's</span><span>Applied Materials</span><span>Texas Instruments</span><span>Mars (SNICKERS)</span><span>Edwards</span><span>Micron</span><span>Boehringer Ingelheim</span><span>Gilead</span><span>OPPO</span><span>GoDaddy</span><span>BASF</span><span>Riot Games</span>
+          <span aria-hidden="true">McDonald's</span><span aria-hidden="true">Applied Materials</span><span aria-hidden="true">Texas Instruments</span><span aria-hidden="true">Mars (SNICKERS)</span><span aria-hidden="true">Edwards</span><span aria-hidden="true">Micron</span><span aria-hidden="true">Boehringer Ingelheim</span><span aria-hidden="true">Gilead</span><span aria-hidden="true">OPPO</span><span aria-hidden="true">GoDaddy</span><span aria-hidden="true">BASF</span><span aria-hidden="true">Riot Games</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="experience">
+    <div class="wrap">
+      <h2><span class="en">Experience</span><span class="zh">工作經歷</span></h2>
+      <p class="intro"><span class="en">Select a role to see the details.</span><span class="zh">點選職稱以查看詳細內容。</span></p>
+      <div class="timeline">
+        <p class="org"><span class="en">Golin, Taipei &nbsp;2019 – Present</span><span class="zh">高誠公關（Golin）台北 &nbsp;2019 – 至今</span></p>
+
+        <details open>
+          <summary><span class="role">Senior Account Manager &amp; Digital Consultant</span><span class="when">Sep 2024 – <span class="en">Present</span><span class="zh">至今</span></span></summary>
+          <p class="clients">McDonald's, Mars (SNICKERS), Texas Instruments, Applied Materials, Edwards</p>
+          <ul>
+            <li><span class="en">Lead a four-person team delivering digital and social programs for tech and consumer brands.</span><span class="zh">帶領 4 人團隊，統籌科技與消費品牌的數位及社群專案。</span></li>
+            <li><span class="en">Manage retainers and projects end to end, from scoping and quotations to delivery.</span><span class="zh">全程負責年度合約與專案的範疇規劃、報價及執行。</span></li>
+          </ul>
+        </details>
+
+        <details>
+          <summary><span class="role">Account Manager &amp; Digital Consultant</span><span class="when">May 2023 – Aug 2024</span></summary>
+          <p class="clients">McDonald's, Texas Instruments, Boehringer Ingelheim, Gilead</p>
+          <ul>
+            <li><span class="en">Led an employer branding campaign that achieved 100% of a QSR brand&rsquo;s full-time hiring goal.</span><span class="zh">主導速食品牌雇主品牌活動，助客戶 100% 達成全職招募目標。</span></li>
+            <li><span class="en">Turned social and audience data into content strategy and creative direction.</span><span class="zh">將社群及受眾數據轉化為內容策略與創意方向。</span></li>
+            <li><span class="en">Planned and optimized paid digital campaigns against KPIs.</span><span class="zh">規劃數位廣告投放，並依 KPI 即時調整優化。</span></li>
+          </ul>
+        </details>
+
+        <details>
+          <summary><span class="role">Assistant Account Manager</span><span class="when">May 2022 – Apr 2023</span></summary>
+          <p class="clients">Micron, Texas Instruments</p>
+          <ul>
+            <li><span class="en">Planned and executed a campaign that won the SABRE Award APAC 2022 for Employer Branding.</span><span class="zh">規劃並執行榮獲 SABRE Award APAC 2022 Employer Branding 獎項之專案。</span></li>
+            <li><span class="en">Developed and executed a crisis communication plan for a negative publicity incident.</span><span class="zh">針對負面輿情事件，制定並執行危機溝通計畫。</span></li>
+            <li><span class="en">Contributed to 3+ new business pitches in finance and FMCG.</span><span class="zh">參與 3 件以上金融及快速消費品產業之新客戶提案。</span></li>
+          </ul>
+        </details>
+
+        <details>
+          <summary><span class="role">Account Supervisor</span><span class="when">Oct 2020 – Apr 2022</span></summary>
+          <p class="clients">Micron, GoDaddy, OPPO</p>
+          <ul>
+            <li><span class="en">Planned and executed a campaign that won the SABRE Award APAC 2021 for Employer Branding.</span><span class="zh">規劃並執行榮獲 SABRE Award APAC 2021 Employer Branding 獎項之專案。</span></li>
+            <li><span class="en">Served as APAC hub lead for regional media briefings, securing 100+ pieces of coverage.</span><span class="zh">擔任亞太區域媒體簡報 Hub Lead，取得逾 100 則媒體報導。</span></li>
+            <li><span class="en">Organized a consumer tech product launch generating 50+ product reviews.</span><span class="zh">籌辦消費性科技產品上市活動，促成逾 50 篇產品評測。</span></li>
+          </ul>
+        </details>
+
+        <details>
+          <summary><span class="role">Account Executive</span><span class="when">Apr 2019 – Sep 2020</span></summary>
+          <p class="clients">Micron, BASF, Riot Games</p>
+          <ul>
+            <li><span class="en">Grew client social followers 104% year over year.</span><span class="zh">客戶社群追蹤人數年增 104%。</span></li>
+          </ul>
+        </details>
+
+        <p class="org">WishLink Hong Kong Co., Ltd., Taipei &nbsp;2016 – 2017</p>
+        <details>
+          <summary><span class="role">Marketing Assistant</span><span class="when">Aug 2016 – Jan 2017</span></summary>
+          <ul>
+            <li><span class="en">Developed a digital marketing campaign that doubled sales revenue.</span><span class="zh">規劃並執行數位行銷活動，帶動營收成長一倍。</span></li>
+          </ul>
+        </details>
+      </div>
+
+    </div>
+  </section>
+  <section id="ai">
+    <div class="wrap">
+      <h2><span class="en">AI in practice</span><span class="zh">AI 應用實務</span></h2>
+      <p class="intro"><span class="en">Putting AI to practical use, and helping others do the same.</span><span class="zh">讓 AI 真正落地，也協助團隊與客戶一起善用。</span></p>
+      <div class="ai-list">
+        <div class="ai-item">
+          <h3><span class="en">AI in team workflows</span><span class="zh">推動團隊 AI 應用</span></h3>
+          <p><span class="en">Proactively evaluate and introduce AI tools that make the entire team more efficient.</span><span class="zh">主動評估並引進 AI 工具，提升團隊整體工作效率。</span></p>
+        </div>
+        <div class="ai-item">
+          <h3><span class="en">AI search visibility</span><span class="zh">AI 搜尋能見度</span></h3>
+          <p><span class="en">Help brands understand how they show up in AI-generated answers, and train client teams on what it means for communications.</span><span class="zh">協助品牌掌握自身在 AI 生成回答中的呈現，並為客戶團隊提供相關培訓。</span></p>
+        </div>
+        <div class="ai-item">
+          <h3><span class="en">AI training &amp; speaking</span><span class="zh">AI 培訓與演講</span></h3>
+          <p><span class="en">Invited to lead generative AI workshops for healthcare professional associations, and to speak on AI in PR at National Chengchi University.</span><span class="zh">受醫療專業學會邀請擔任生成式 AI 工作坊講師，並受邀至國立政治大學分享 AI 在公關產業的應用。</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="more">
+    <div class="wrap">
+      <div class="facts">
+        <div class="fact">
+          <h3><span class="en">Awards</span><span class="zh">獎項</span></h3>
+          <p>SABRE Award APAC, Employer Branding (2021, 2022)</p>
+        </div>
+        <div class="fact">
+          <h3><span class="en">Education</span><span class="zh">學歷</span></h3>
+          <p><span class="en">University of Melbourne, Master of Management (Marketing)</span><span class="zh">墨爾本大學 管理碩士（行銷）</span></p>
+          <p><span class="en">National Chengchi University, B.A. Public Administration</span><span class="zh">國立政治大學 公共行政學系 學士</span></p>
+        </div>
+        <div class="fact">
+          <h3><span class="en">Languages</span><span class="zh">語言</span></h3>
+          <p><span class="en">Mandarin Chinese (native), English (full professional)</span><span class="zh">中文（母語）、英文（專業工作能力）</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Sherry Lee</span>
+    <a class="btn" href="https://www.linkedin.com/in/sherrylee-89935baa" target="_blank" rel="noopener"><span class="en">Connect on LinkedIn</span><span class="zh">LinkedIn 個人頁面</span></a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var btn = document.getElementById('langBtn');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var pairs = {
+    en: [["complex technology", "shareable stories"], ["social data", "sharper strategy"], ["AI tools", "everyday productivity"]],
+    zh: [["艱深的晶片技術", "引人共鳴的品牌故事"], ["社群數據", "精準的策略洞察"], ["AI 工具", "團隊的日常生產力"]]
+  };
+  var idx = 0;
+  var rotA = document.getElementById('rotA');
+  var rotB = document.getElementById('rotB');
+
+  function render(animate) {
+    var p = pairs[root.dataset.lang][idx];
+    [[rotA, p[0]], [rotB, p[1]]].forEach(function (pair) {
+      var el = pair[0];
+      el.classList.remove('swap');
+      el.firstElementChild.textContent = pair[1];
+      if (animate) { void el.offsetWidth; el.classList.add('swap'); }
+    });
+  }
+
+  function setLang(l) {
+    root.dataset.lang = l;
+    root.lang = l === 'zh' ? 'zh-Hant' : 'en';
+    btn.textContent = l === 'zh' ? 'EN' : '中文';
+    btn.setAttribute('aria-label', l === 'zh' ? 'Switch to English' : '切換為中文');
+    try { localStorage.setItem('sl-lang', l); } catch (e) {}
+    render(false);
+  }
+
+  var saved = null;
+  try { saved = localStorage.getItem('sl-lang'); } catch (e) {}
+  var hash = location.hash.replace('#', '');
+  var initial = hash === 'zh' || hash === 'en' ? hash : (saved || 'en');
+  setLang(initial);
+  btn.addEventListener('click', function () { setLang(root.dataset.lang === 'zh' ? 'en' : 'zh'); });
+
+  if (!reduce) {
+    setInterval(function () { idx = (idx + 1) % 3; render(true); }, 3000);
+  }
+
+  document.querySelectorAll('.tile').forEach(function (t) {
+    t.addEventListener('click', function () {
+      var on = t.classList.toggle('on');
+      t.setAttribute('aria-pressed', on ? 'true' : 'false');
+    });
+  });
+
+  var nums = document.querySelectorAll('.num[data-count]');
+  function fmt(el, v) {
+    var d = +(el.dataset.decimals || 0);
+    return (el.dataset.prefix || '') + v.toFixed(d) + (el.dataset.suffix || '');
+  }
+  if (!reduce && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        io.unobserve(e.target);
+        var el = e.target, end = +el.dataset.count, t0 = null, dur = 1100;
+        function step(ts) {
+          if (!t0) t0 = ts;
+          var k = Math.min(1, (ts - t0) / dur), ease = 1 - Math.pow(1 - k, 3);
+          el.textContent = fmt(el, end * ease);
+          if (k < 1) requestAnimationFrame(step); else el.textContent = fmt(el, end);
+        }
+        requestAnimationFrame(step);
+      });
+    }, { threshold: 0.4 });
+    nums.forEach(function (n) { n.textContent = fmt(n, 0); io.observe(n); });
+  }
+})();
+</script>
+</body>
+</html>
